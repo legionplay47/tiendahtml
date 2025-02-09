@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Artesanías</title>
+    <!-- Materialize CSS -->
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Nuestro CSS -->
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid bg-primary">
+            <a class="navbar-brand text-white" href="#">Artesanías Únicas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#Inicio" onclick="showSection('Home')">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#Store" onclick="showSection('tienda')">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#Login" onclick="showSection('Login')">Login</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#Carrito" onclick="showSection('Carrito')">Carrito</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <section id="Home" class="section active">
+        <section class="container mt-5">
+            <h1 class="text-primary">¡Bienvenidos a nuestra tienda de artesanías!</h1>
+            <p>Encuentra piezas únicas hechas a mano por artesanos talentosos.</p>
+            <p>Nuestros artesanos trabajan arduamente para brindarte productos que no solo son bellos, sino que también representan cultura, historia y emociones. 
+               Desde joyería hasta decoración, cada artículo es cuidadosamente diseñado para satisfacer tus necesidades y gustar a tus sentidos.
+            </p>
+        </section>
+        
+        <div class="container card align-items-center py-3">
+            <h1>Galería</h1>
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="img/caballo2.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/angel.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/perro3.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="img/adorno1.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="img/loro.jpg"></a>
+            </div><br>
+            <button type="button" class="btn btn-primary" style="width: 5cm;" href="#Store" onclick="showSection('tienda')">Ir a la tienda</button>
+        </div>
+
+        <!-- Sección de Testimonios -->
+        <section id="testimonios" class="container mt-5">
+            <h2 class="text-secondary">¿Qué dicen nuestros clientes?</h2>
+            <div class="row"> 
+                <div class="col s6">
+                    <div class="card-panel">
+                        <div class="row valign-wrapper">
+                            <div class="col-3">
+                                <img src="img/Mary.png" alt="Cliente" class="circle responsive-img" style="height: 3cm; width: 3cm;">
+                            </div>
+                            <div class="col-9">
+                                <span class="black-text">
+                                    "Las piezas son hermosas y únicas. ¡Estoy muy satisfecha con mi compra!" - Marilyn S.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s6">
+                    <div class="card-panel">
+                        <div class="row valign-wrapper">
+                            <div class="col-3">
+                                <img src="img/Luis.png" alt="Cliente" class="circle responsive-img" style="height: 3cm">
+                            </div>
+                            <div class="col-9">
+                                <span class="black-text">
+                                    "Atención al cliente excelente y productos de alta calidad. ¡Recomendado!" - Luis P.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 center">
+                    <!-- Preguntas Frecuentes (FAQs) -->
+                    <section class="container mt-5">
+                        <h2 class="text-secondary">Preguntas Frecuentes</h2>
+                        <div class="faq">
+                            <p><strong>¿Cuáles son los métodos de pago?</strong></p>
+                            <p>Transferencias Banco Pichinca y Guayaquil.</p>
+
+                            <p><strong>¿Cuánto tiempo demora el envío?</strong></p>
+                            <p>El envío suele tardar entre 5 y 10 días hábiles, dependiendo de la ubicación.</p>
+                        </div>
+                    </section>
+                        
+                    <!-- Sección de Dirección -->
+                    <section id="direccion" class="container mt-5">
+                        <h2 class="text-secondary">Visítanos en Nuestra Tienda</h2>
+                        <p><strong>Dirección:</strong> La Pila - Manabí - Ecuador</p>
+                        <p><strong>Teléfono:</strong> +123 456 789</p>
+                        <p><strong>Email:</strong> contacto@tiendadeartesania.com</p>
+
+                    </section>
+                </div>
+
+                <div class="col-6 center">
+                    <img src="img/angel.jpg" alt="angel">
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
+    <!-- Tienda Section -->
+       
+    <section id="tienda" class="section">
+        <div class="container">
+            <h2>Bienvenidos</h2>
+            <h3>PRODUCTOS DISPONIBLES EN NUESTRA TIENDA </h3>
+            
+            <div class="row">
+
+                <!-- Producto 1 -->
+                <div class="col s12 m6 14">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/adorno1.jpg" alt="Adorno/Mujer negra">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Adorno/Mujer negra', 15)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Adorno/Mujer negra</span>
+                            <p>$15.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/adorno4.jpg" alt="Juego de tres adornos/Mujer con tazón">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Juego de tres adornos/Mujer con tazón', 30)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Juego de tres adornos/Mujer con tazón</span>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/angel.jpg" alt="Ángel">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Ángel', 25)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Ángel</span>
+                            <p>$25.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/florero.jpg" alt="Floreros">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Floreros', 19.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Floreros</span>
+                            <p>$19.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/adorno5.jpg" alt="Juego de cucharas de 4 piezas">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Juego de cucharas de 4 piezas', 13.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Juego de cucharas de 4 piezas</span>
+                            <p>$13.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <!-- Producto 1 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/manzana4.jpg" alt="Manzana roja grande">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Manzana roja grande', 10.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Manzana roja grande</span>
+                            <p>$10.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 2 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/manzana3.jpg" alt="Manzana verde grande">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Manzana verde grande', 10.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Manzana verde grande</span>
+                            <p>$10.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 3 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/manzna.jpg" alt="Juego de tres manzanas verdes">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Juego de tres manzanas verdes', 8.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Juego de tres manzanas verdes</span>
+                            <p>$8.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 4 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/adorno7.jpg" alt="Juego de tres adornos/Mujer con tazón">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Juego de tres adornos/Mujer con tazón', 30)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Juego de tres adornos/Mujer con tazón</span>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 5 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/aguila.jpg" alt="Águila">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Águila', 14.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Águila</span>
+                            <p>$14.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <!-- Producto 1 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/aguila2.jpg" alt="Águila sobre tronco">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Águila sobre tronco', 14.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Águila sobre tronco</span>
+                            <p>$14.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 2 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/angel2.jpg" alt="Arcángel">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Arcángel', 10.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Arcángel</span>
+                            <p>$10.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 3 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/angelito.jpg" alt="Angelito">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Angelito', 8.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Angelito</span>
+                            <p>$8.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 4 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/angelito2.jpg" alt="Angelito con tazón">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Angelito con tazón', 10)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Angelito con tazón</span>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 5 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/bsc.jpg" alt="Balón BSC">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Balón BSC', 8.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Balón BSC</span>
+                            <p>$8.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <!-- Producto 1 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/adorno11.jpg" alt="Figura/Mujer negra">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Figura/Mujer negra', 9.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Figura/Mujer negra</span>
+                            <p>$9.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 2 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/caballo1.jpg" alt="Caballito">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Caballito', 10.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Caballito</span>
+                            <p>$10.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 3 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/caballo2.jpg" alt="Caballo Grande">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Caballo Grande', 14.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Caballo Grande</span>
+                            <p>$14.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 4 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/cerdoR.jpg" alt="Cerdito rosa">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Cerdito rosa', 5.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Cerdito rosa</span>
+                            <p>$5.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 5 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/cereza.jpg" alt="Juego de 3 cerezas">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Juego de 3 cerezas', 18.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Juego de 3 cerezas</span>
+                            <p>$18.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="row">
+
+                <!-- Producto 1 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/elefante.jpg" alt="Elefante">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Elefante', 9.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Elefante</span>
+                            <p>$9.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 2 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/frutas.jpg" alt="Juego de frutas">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Juego de frutas', 10.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Juego de frutas</span>
+                            <p>$10.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 3 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/gallina2.jpg" alt="Adorno/Gallina">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Adorno/Gallina', 7.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Adorno/Gallina</span>
+                            <p>$7.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 4 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/img.jpg" alt="Juego de 3 manzanas azules">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Juego de 3 manzanas azules', 15.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Juego de 3 manzanas azules</span>
+                            <p>$15.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 5 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/justicia.jpg" alt="Figura/Justicia">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Figura/Justicia', 11.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Figura/Justicia</span>
+                            <p>$11.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Producto 1 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/loro.jpg" alt="Loro">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Loro', 6.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Loro</span>
+                            <p>$6.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 2 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/noel.jpg" alt="Noel">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Noel', 6.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Noel</span>
+                            <p>$6.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 3 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/perro2.jpg" alt="Perro Mediano">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Perro Mediano', 10.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Perro Mediano</span>
+                            <p>$10.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 4 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/perro3.jpg" alt="Perro Grande">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Perro Grande', 15.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Perro Grande</span>
+                            <p>$15.99</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Producto 5 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/tortuga.jpg" alt="Tortuga">
+                            <a href="#!" class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarAlCarrito('Tortuga', 6.99)">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Tortuga</span>
+                            <p>$6.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+
+    <!-- Sección Carrito -->
+    <section id="Carrito" class="section">
+        <section class="container mt-5">
+            <h2>Tu Carrito</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                     </tr>
+                </thead>
+                <tbody id="carrito-productos">
+                    <!-- Los productos agregados al carrito se insertarán aquí -->
+                </tbody>
+            </table>
+            <div class="text-end">
+                <h4 id="carrito-total">Total: $0.00</h4>
+                <button class="btn btn-success" id="finalizar-btn">Finalizar Compra</button>
+            </div>
+        </section>
+    </section>
+
+    <!-- Login Form -->
+    <section id="Login" class="section">
+        <section class="container  mt-5">
+            <h2>Iniciar Sesión</h2>
+            <form >
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+            </form>
+        </section>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="page-footer teal darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Tienda de Artesanías</h5>
+                    <p class="grey-text text-lighten-4">Hecho con amor para ti.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Síguenos</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://www.instagram.com">Instagram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.youtube.com">Youtube</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.x.com">X</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+           
+        <div class="footer-copyright">
+            <div class="container">
+                © 2024 Artesanías Únicas
+                <a class="grey-text text-lighten-4 right" href="https://www.gmail.com/">Contáctanos</a>
+            </div>
+        </div>
+    </footer>
+        
+    <!-- Materialize JS -->
+    <script src="js/materialize.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+      
+
+    <script src="js/funciones.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            M.Carousel.init(elems, {
+                duration: 300,
+            });
+        });
+    </script>
+</body>
+</html>
